@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="romero.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>arreglos</legend>
+
+            <!--cargado-->
+            <label>numeros para arreglo a</label>
+            <input type="number" id="num1"><br>
+
+            <label>numeros para arreglo b</label>
+            <input type="number" id="num2"><br>
+            
+            <!--boton cargar-->
+            <input type="button" value="cargar en arreglos" onclick="Cargar()"><br>
+            <input type="button" value="intercambiar arreglos" onclick="Cambio(a,b)"><br>
+            <input type="button" value="sumar arreglos" onclick="Sumar(a,b)"><br>
+
+            <!--busqueda-->
+            <label>¿que numero buscas del arreglo suma?</label>
+            <input type="number" value="buscar numero" onclick="Buscar(suma)" id="busqueda"><br>
+            <input type="button" value="buscar numero" onclick="Buscar"><br>
+        </fieldset>
+        <hr>
+        <div>
+            arreglos
+            <p id="arregloa"></p>
+            <p id="arreglob"></p>
+        </div>
+        <div>
+            suma
+            <p id="rta1"></p>
+            <p id="rta2"></p>
+            <p id="suma"></p>
+        </div>
+        <div>
+            intercambio
+            <p id="rta3"></p>
+            <p id="rta4"></p>
+        </div>
+        <div>
+            <p id="busca"></p>
+        </div>
+    </form>
+</body>
+</html>
